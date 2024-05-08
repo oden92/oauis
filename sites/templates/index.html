@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-{%load static%}
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>My site</title>
-
-  <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-  <!-- MDB -->
-  <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
-  <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
-  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-
-<body>
-  {%include 'navbar.html'%}
-  <h1 class="text-center">Bienvenue sur le site de notre bibliotheque </h1>
 
   <div class="container">
     <div class="row">
@@ -42,7 +17,7 @@
             <h5 class="card-title"><a href="{%url 'detail' article.id %}">{{article.title}}</a></h4>
               <p class="card-text">{{article.desc|truncatewords:8}}</p>
               <p class="card-text">{{article.created_at|timesince}}</p>
-              <a href="{%url 'detail' article.id %}" class="btn btn-primary" data-mdb-ripple-init>Boutton</a>
+              <a href="{%url 'detail2' %}" class="btn btn-primary" data-mdb-ripple-init>Boutton</a>
           </div>
         </div>
       </div>
